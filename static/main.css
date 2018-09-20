@@ -1,3 +1,47 @@
-h1 {
-    color:red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #C2B099;
+}
+
+#header {
+    display: flex;
+    height: 50px;
+    position:fixed;
+    width:100%;
+    background-color: #A89985;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+}
+
+#header-img {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    padding: 10px;
+    margin: 50px auto 0px auto
+}
+/* 
+Media Queries
+*/
+
+@media (min-width: 600px) {
+    #header {
+        height: 100px;
+    }
+    #header-img {
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        margin-top: 100px;
+        max-width:900px;
+
+    }
 }

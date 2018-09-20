@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TITLE</title>
+    <title>Product Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
+
 <body>
-   <h1>Hello World!</h1> 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header id="header">
+        <img id="header-img" src="img/tent.png" alt="">
+        <nav id="nav-bar">
+            <a href="#product-features" class="nav-link">Features</a>
+            <a href="#product-video" class="nav-link">Video</a>
+            <a href="#product-purchase" class="nav-link">Purchase</a>
+        </nav>
+    </header>
+
+    <main class='container'>
+        <div id='product-form'>
+            <h1 id="title">Get ready to go light...</h1>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" placeholder="Please enter your email..." id="email">
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+
+        <div id="product-features">
+            <div class="feature__row">
+                <div class="feature__icon"><i class="fas fa-umbrella"></i></div>
+                <div class="feature__text"> <h2>Weather-Proof</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> </div>
+            </div>
+            <div class="feature__row">
+                <div class="feature__icon"><i class="fas fa-wifi"></i></div>
+                <div class="feature__text"> <h2>No Wi-Fi Included</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> </div>
+            </div>
+            <div class="feature__row">
+                <div class="feature__icon"><i class="fas fa-balance-scale"></i></div>
+                <div class="feature__text"> <h2>Ultra-light</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> </div>
+            </div>
+        </div>
+
+        <div id="product-video">
+            <iframe id='video' width="auto" height="auto" src="https://www.youtube.com/embed/1MtE_4zybF8" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div id="product-purchase">
+            <div class="product-purchase__item">
+                <div class="purchase__title">Solo Tent</div>
+                <h3>$500</h3>
+                <ul>
+                    <li>Latest DCF Fabric</li>
+                    <li>Silver Colour</li>
+                    <li>Ultra-light Design</li>
+                    <li>Perfect for one person</li>
+                </ul>
+                <div class="purchase__button"></div>
+            </div>
+            <div class="product-purchase__item">
+                <div class="purchase__title">Double Tent</div>
+                <h3>$600</h3>
+                <ul>
+                    <li>Latest DCF Fabric</li>
+                    <li>Silver Colour</li>
+                    <li>Ultra-light Design</li>
+                    <li>Perfect for two persons</li>
+                </ul>
+                <div class="purchase__button"></div>
+            </div>
+            <div class="product-purchase__item">
+                <div class="purchase__title">Triple Tent</div>
+                <h3>$700</h3>
+                <ul>
+                    <li>Latest DCF Fabric</li>
+                    <li>Silver Colour</li>
+                    <li>Ultra-light Design</li>
+                    <li>Perfect for three persons</li>
+                </ul>
+                <div class="purchase__button"></div>
+            </div>
+        </div>
+        <footer id="footer">
+            <a href="#">Privacy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact</a>
+            <p>Made by <a href="">Tom Waardenburg</a> for <a href="">freecodecamp</a></p>
+        </footer>
+    </main>
 </body>
+
 </html>
